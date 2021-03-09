@@ -3,14 +3,17 @@ package it.polito.tdp.parole.model;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.LinkedList;
 import java.util.List;
 
-public class Parole {
-		
+import it.polito.tdp.parole.model.Parole.OrdinaParole;
+
+public class ParoleLinkedList {
+	
 	private List<String> parole;
 	
-	public Parole() {
-		this.parole= new ArrayList<>() ;
+	public ParoleLinkedList() {
+		this.parole= new LinkedList<>() ;
 	}
 	
 	public void addParola(String p) {
@@ -45,7 +48,7 @@ public class Parole {
 	}
 
 	public void Cancella(String parola) {
-		List<String>lista=new ArrayList<String>();
+		List<String>lista=new LinkedList<String>();
 		for(String s: this.parole) {
 			if(!s.equals(parola)) {
 				lista.add(s);
