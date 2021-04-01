@@ -45,13 +45,14 @@ public class Parole {
 	}
 
 	public void Cancella(String parola) {
-		List<String>lista=new ArrayList<String>();
+		/*List<String>lista=new ArrayList<String>();
 		for(String s: this.parole) {
 			if(!s.equals(parola)) {
 				lista.add(s);
 			}
 		}
-		this.parole=lista;
+		this.parole=lista;*/
+		parole.remove(parola);
 	}
 
 }
